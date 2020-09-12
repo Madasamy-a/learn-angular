@@ -1,0 +1,15 @@
+<div>
+  <h1>{{title}}</h1>
+  <h1>Employee List</h1>
+  <ul>
+    <li *ngFor='let emp of employees'>
+      {{emp.name}} -- {{emp.status}}
+    </li>
+  </ul>
+</div>
+
+<a routerLink="/home">Home</a> | <a routerLink="/about">About</a> | <a routerLink="/contact">Contacct</a>
+
+<div style="border: solid 1px red; width: 200px; height:500px;">
+<router-outlet></router-outlet>
+</div>
